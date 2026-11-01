@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">ReviewListAndAdapter1</string>
+    <string name="Listtitle">My man list</string>
+    <string name="helloworld">hello world</string>
+</resources>
