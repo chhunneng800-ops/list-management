@@ -1,18 +1,10 @@
 package com.example.reviewlistandadapter1
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.TextView
 import androidx.activity.ComponentActivity
-import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
-import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.foundation.layout.padding
-import androidx.compose.material3.Scaffold
-import androidx.compose.material3.Text
-import androidx.compose.runtime.Composable
-import androidx.compose.ui.Modifier
-import androidx.compose.ui.tooling.preview.Preview
-import com.example.reviewlistandadapter1.ui.theme.ReviewListAndAdapter1Theme
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -21,8 +13,14 @@ class MainActivity : ComponentActivity() {
         setContentView(R.layout.activity_main)
 
 //        val tetxViewTitle = findViewById<TextView>(R.id.textViewTitle)
-//
 //        tetxViewTitle.text = getString(R.string.helloworld)
+
+
+        val btnStd =findViewById<TextView>(R.id.btnStudentManagement)
+        btnStd.setOnClickListener {
+            val intent = Intent(this, SearchStudentActivity::class.java)
+            this.startActivity(intent)
+        }
 
 
 
